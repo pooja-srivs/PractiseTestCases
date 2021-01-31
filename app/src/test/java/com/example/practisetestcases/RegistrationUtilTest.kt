@@ -67,9 +67,9 @@ class RegistrationUtilTest{
     @Test
     fun `password size less than 2 returns false`(){
         val result = RegistrationUtil.validateRegistrationInput(
-            "Shivam",
-            "13d6fty",
-            "13d6fty"
+            "Neeru",
+            "13d",
+            "13d"
         )
 
         assertThat(result).isFalse()

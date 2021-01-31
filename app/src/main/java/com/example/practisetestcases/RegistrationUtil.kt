@@ -27,7 +27,7 @@ object RegistrationUtil {
             return false
         }
 
-        if (password.count { it.isDigit() } < 2){
+        if (password.count { it.isDigit() } < 4){
             return false
         }
 
