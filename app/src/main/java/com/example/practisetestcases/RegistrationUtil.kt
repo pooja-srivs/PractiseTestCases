@@ -2,6 +2,7 @@ package com.example.practisetestcases
 
 object RegistrationUtil {
 
+    val userList = listOf<String>("Pooja", "Shikha", "Tripti")
     /**
     * the input is not valid if...
     * .....the username/password is empty
@@ -14,6 +15,22 @@ object RegistrationUtil {
         password : String,
         confirmPassword : String
     ): Boolean{
+        if (username.isEmpty() || password.isEmpty()){
+            return false
+        }
+
+        if (username in userList){
+            return true
+        }
+
+        if (password != confirmPassword ){
+            return false
+        }
+
+        if (password.count { it.isDigit() } < 2){
+            return false
+        }
+
         return true
     }
 }

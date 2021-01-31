@@ -56,9 +56,9 @@ class RegistrationUtilTest{
     @Test
     fun `password repeated returns false`(){
         val result = RegistrationUtil.validateRegistrationInput(
-            "Pooja",
-            "123",
-            "12345"
+            "Shivam",
+            "123huhu",
+            "12345hujk"
         )
 
         assertThat(result).isFalse()
@@ -67,9 +67,9 @@ class RegistrationUtilTest{
     @Test
     fun `password size less than 2 returns false`(){
         val result = RegistrationUtil.validateRegistrationInput(
-            "Pooja",
-            "12",
-            "12"
+            "Shivam",
+            "13d6fty",
+            "13d6fty"
         )
 
         assertThat(result).isFalse()
