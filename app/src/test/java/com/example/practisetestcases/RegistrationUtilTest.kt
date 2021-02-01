@@ -38,10 +38,6 @@ class RegistrationUtilTest{
         assertThat(result).isTrue()
     }
 
-    //password empty
-    //password repeated incorrectly
-    //password contains less than 2 digits
-
     @Test
     fun `password empty returns false`(){
         val result = RegistrationUtil.validateRegistrationInput(
